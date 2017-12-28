@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Backbone Models</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="javascripts/underscore-min.js"></script>
+    <script src="javascripts/backbone-min.js"></script>
+    <script src="javascripts/script.js"></script>
+  </head>
+  <body>
+    <script id="users" type="text/x-handlebars">
+      {{#each users}}
+      <article id="user_{{id}}">
+        <h1><a href="http://{{website}}">{{name}}</a></h1>
+        <h2><a href="mailto:{{email}}">{{email}}</a></h2>
+        <dl>
+          <dt>User name</dt>
+          <dd>{{username}}</dd>
+          <dt>Company</dt>
+          <dd>{{company_name}}</dd>
+        </dl>
+      </article>
+      {{/each}}
+    </script>
+  </body>
+</html>
